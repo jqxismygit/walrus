@@ -1,12 +1,14 @@
 import IConfig, { IPlugin } from './config';
 import { IPluginPrettierOptions, IProcessFilesOptions } from './plugin-prettier';
 import { IPluginCommitLintOptions } from './plugin-commitlint';
+import { IPluginStyleLintOptions } from './plugin-stylelint';
 
 export {
   IConfig,
   IPlugin,
   IPluginPrettierOptions,
   IProcessFilesOptions,
+  IPluginStyleLintOptions,
   IPluginCommitLintOptions
 };
 

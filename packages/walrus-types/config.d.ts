@@ -1,5 +1,6 @@
 import { IPluginPrettierOptions } from './plugin-prettier';
 import { IPluginCommitLintOptions } from './plugin-commitlint';
+import { IPluginStyleLintOptions } from './plugin-stylelint';
 
 export type IPluginOptions = {
   [key: string]: any
@@ -33,6 +34,7 @@ interface IConfig {
    */
   pluginPrettier?: IPluginPrettierOptions;
   pluginCommitLint?: IPluginCommitLintOptions;
+  pluginStyleLint?: IPluginStyleLintOptions;
 }
 
 export default IConfig;
