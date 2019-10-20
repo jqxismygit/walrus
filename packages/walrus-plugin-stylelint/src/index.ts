@@ -1,5 +1,6 @@
 import { IApi, IConfig } from '@walrus/types';
 import * as stylelint from 'stylelint';
+import defaultOptions from './defaultOptions';
 
 export default function(api: IApi, config: IConfig) {
   api.registerCommand(
@@ -12,6 +13,9 @@ export default function(api: IApi, config: IConfig) {
       }
     },
     (args) => {
-      // stylelint.lint()
+      stylelint.lint(defaultOptions)
+        .then(function(result) {
+          console.log(result);
+        });
     })
 }

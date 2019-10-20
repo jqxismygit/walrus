@@ -11,12 +11,17 @@ export type IPlugin<T = IPluginOptions> = string | [string, T];
 interface IConfig {
   /**
    * 当前项目使用的框架
-   * 默认: react
+   * @default react
    */
   frame?: 'react' | 'vue' | 'angular' | '';
   /**
+   * 当前项目使用的样式
+   * @default less
+   */
+  style?: 'scss' | 'less';
+  /**
    * 是否使用typescript
-   * 默认: true
+   * @default true
    */
   useTypescript?: boolean;
   /**
